@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "iwcs-paper"
+version = "0.1.0"
+description = "Code to reproduce results presented in the paper \"Multi-purpose neural network for French categorial grammars\" submitted at IWCS2023."
+authors = ["Anonymous Submission"]
+readme = "README.md"
+packages = [{include = "iwcs_paper"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+huggingface-hub = "0.13.3"
+numpy = "1.24.2"
+matplotlib = "3.7.1"
+mpmath = "1.3.0"
+pltpublish = "1.0.0"
+pyparsing = "3.0.9"
+pytorch-crf = "0.7.2"
+requests = "2.28.2"
+torch = "2.0.0"
+tqdm = "4.65.0"
+transformers = "4.27.1"
+torch-poly-lr-decay = {git = "https://github.com/cmpark0126/pytorch-polynomial-lr-decay.git", rev = "9251dd7190eccfb1cd08e1ebce52e03cff0cb58a"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
